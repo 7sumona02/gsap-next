@@ -13,7 +13,7 @@ const Page: React.FC = () => {
     useGSAP(
         () => {
             const tl = gsap.timeline()
-            tl.from('.nav .navLogo, .nav .navLink', { y: -30, opacity: 0, delay: 0.5, duration: 0.5, stagger: 0.08 }); 
+            tl.from('.nav .navLogo, .nav .navLink', { y: -30, opacity: 0, delay: 0.5, duration: 0.5 }); 
         },
         { scope: nav }
     ); 
