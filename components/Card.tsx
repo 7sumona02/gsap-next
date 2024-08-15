@@ -12,10 +12,11 @@ interface CardProps {
     cardBg: string,
     iconColor: string,
     iconBg: string,
+    className: string,
   }
 
 const Card: React.FC<CardProps> = ({
-    title, bgTitle, cardImg, cardURL, colorURL, cardBg, iconColor, iconBg
+    title, bgTitle, cardImg, cardURL, colorURL, cardBg, iconColor, iconBg, className
 }) => {
   return (
     <div className={`p-10 rounded-3xl border-2 border-b-8 border-black max-w-md flex justify-between ${cardBg}`}>

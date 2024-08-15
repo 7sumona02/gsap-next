@@ -11,6 +11,7 @@ const page = () => {
       <Hero />
       <Banner />
       <Services />
+      <div className="pb-10 bg-neutral-50"></div>
     </div>
   )
 }

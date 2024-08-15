@@ -16,14 +16,14 @@ const Hero: React.FC = () => {
             tl.from('.hero .heroTitle', { x: -200, opacity: 0, duration: 0.5 }); 
             tl.from('.hero .heroContent', { x: -100, opacity: 0, duration: 0.4 });
             tl.from('.hero .heroButton', { opacity: 0, duration: 0.4 }); 
-            tl.from('.hero .heroImg', { opacity: 0, duration: 0.5 }, "-=1"); 
+            tl.from('.hero .heroImg', { opacity: 0, duration: 0.5, x: 200 }, "-=0.7"); 
         },
         { scope: hero }
     ); 
 
   return (
-    <div className='w-full h-[80vh]' ref={hero}>
-        <div className='flex flex-1 justify-between items-center text-black py-12 hero'>
+    <div className='w-full h-[72vh]' ref={hero}>
+        <div className='flex flex-1 justify-between items-center text-black py-10 hero'>
             <div className='px-20'>
                 <div className='flex flex-col gap-6'>
                     <h2 className='max-w-lg text-6xl font-bold heroTitle'>Navigating the digital landscape for success</h2>
